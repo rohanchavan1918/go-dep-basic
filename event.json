@@ -1,0 +1,102 @@
+{
+  "account": "123456789012",
+  "detail": {
+    "AppendToBaseQuery": true,
+    "ClientSchema": "s_14340",
+    "Deadline": "2024-01-16T11:41:17.780276629Z",
+    "FailRequestTime": "0001-01-01T00:00:00Z",
+    "FinalSegments": [],
+    "PrivateSchema": "s_14340",
+    "attributes": null,
+    "callBackDetails": {
+      "callBackURL": "https://webhook.site/aa2fd431-7f1f-4bf4-8623-512ecee8ff19",
+      "compression": false,
+      "fileFormat": "",
+      "max_record_count_per_file": 0,
+      "requireheaders": false,
+      "returnMode": "webhook",
+      "returnRequest": 1,
+      "single_file": false
+    },
+    "campaignType": "broadcast",
+    "channel": "email",
+    "clientid": 14340,
+    "controlGroup": {
+      "split": 0,
+      "splitDetails": null
+    },
+    "freqCapData": {
+      "Day": {
+        "End": "0001-01-01T00:00:00Z",
+        "Start": "0001-01-01T00:00:00Z"
+      },
+      "Mids": null,
+      "Month": {
+        "End": "0001-01-01T00:00:00Z",
+        "Start": "0001-01-01T00:00:00Z"
+      },
+      "Week": {
+        "End": "0001-01-01T00:00:00Z",
+        "Start": "0001-01-01T00:00:00Z"
+      },
+      "limit": {
+        "d": 0,
+        "m": 0,
+        "w": 0
+      },
+      "returnParams": null
+    },
+    "freqcapflag": 0,
+    "getReachabilityCount": false,
+    "isSpecial": false,
+    "journeyid": 0,
+    "messageid": 1505,
+    "mtrequestid": "",
+    "processid": "2dbb48f5-7f68-4f49-b624-94c1ef601b4e",
+    "queryMap": {
+      "identified": "SELECT %v FROM (SELECT DISTINCT u.uid from s_14340.userDetailsAttrs u LEFT OUTER JOIN s_14340.disableUsers d ON u.uid = d.uid AND u.utype=d.utype JOIN (SELECT /*+ GBYTYPE(PIPE)*/ DISTINCT uid FROM s_14340.userdetailsLists WHERE cid = 14340 AND lid IN (4,8,10) AND utype = 1) list ON list.uid=u.uid WHERE u.utype = 1 AND (d.uid IS NULL OR d.disabled=0) AND u.em is NOT NULL AND u.em != '' AND u.em != '-11111' AND (u.blacklisted = 0 OR u.blacklisted IS NULL) %v) as abc  %v"
+    },
+    "rebuildSegment": 1,
+    "receivedTime": "2024-01-16 16:56:37",
+    "remove": {
+      "blank": {
+        "email": 1
+      },
+      "dedup": {},
+      "messageid": [1505, 1506],
+      "optout": {
+        "email": 1
+      }
+    },
+    "requestid": "5fe73972-fe3c-4cc0-b885-1d823001d04a",
+    "returnParams": ["uid"],
+    "runid": "",
+    "select": {
+      "list": [484],
+      "optin": {
+        "whatsapp": 0
+      },
+      "optout": {},
+      "queryBuilderParams": {
+        "automationid": 0,
+        "clientid": 0,
+        "freqcapflag": 0,
+        "requestid": "",
+        "segment": 0
+      }
+    },
+    "timezone": "",
+    "version": 2
+  },
+  "detail-type": "EC2 Instance Launch Successful",
+  "id": "12345678-1234-5678-1234-567812345678",
+  "processid": "2dbb48f5-7f68-4f49-b624-94c1ef601b4e",
+  "region": "us-east-1",
+  "requestid": "5fe73972-fe3c-4cc0-b885-1d823001d04a",
+  "resources": [
+    "arn:aws:ec2:us-east-1:123456789012:instance/i-0123456789abcdef0"
+  ],
+  "source": "sas",
+  "time": "2024-01-17T10:00:00Z",
+  "version": "0"
+}

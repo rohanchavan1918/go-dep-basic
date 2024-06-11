@@ -1,0 +1,12 @@
+mode: set
+go-dep-inj/libs/common.go:5.72,8.16 2 1
+go-dep-inj/libs/common.go:8.16,10.3 1 1
+go-dep-inj/libs/common.go:11.2,11.25 1 1
+go-dep-inj/libs/mock_redis.go:12.74,14.2 1 0
+go-dep-inj/libs/redis.go:30.74,36.16 5 0
+go-dep-inj/libs/redis.go:36.16,38.3 1 0
+go-dep-inj/libs/redis.go:40.2,40.18 1 0
+go-dep-inj/lambda1/main.go:15.65,21.16 6 1
+go-dep-inj/lambda1/main.go:21.16,23.3 1 0
+go-dep-inj/lambda1/main.go:24.2,24.30 1 1
+go-dep-inj/lambda1/main.go:27.13,32.2 2 0
